@@ -11,43 +11,50 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-16 px-4 bg-white text-center">
-      <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-      <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-4">
+    <section id="contact" className="py-16 px-4 bg-gradient-to-br from-blue-50 to-blue-100 text-center">
+      <h2 className="text-3xl font-bold text-gray-800 mb-8">Contact Us</h2>
+
+      <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg space-y-6">
         <div>
-          <label className="block text-left font-semibold">Name</label>
-          <input 
-            type="text" 
-            value={name} 
-            onChange={(e) => setName(e.target.value)} 
-            required 
-            className="w-full p-2 border border-gray-300 rounded"
+          <label className="block text-left font-semibold text-gray-700 mb-1">Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
+            placeholder="Enter your name"
           />
         </div>
+        
         <div>
-          <label className="block text-left font-semibold">Email</label>
-          <input 
-            type="email" 
-            value={email} 
-            onChange={(e) => setEmail(e.target.value)} 
-            required 
-            className="w-full p-2 border border-gray-300 rounded"
+          <label className="block text-left font-semibold text-gray-700 mb-1">Email</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
+            placeholder="Enter your email"
           />
         </div>
+        
         <div>
-          <label className="block text-left font-semibold">Message</label>
-          <textarea 
-            value={message} 
-            onChange={(e) => setMessage(e.target.value)} 
-            required 
-            className="w-full p-2 border border-gray-300 rounded h-32"
+          <label className="block text-left font-semibold text-gray-700 mb-1">Message</label>
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 h-32"
+            placeholder="Write your message here"
           />
         </div>
-        <button 
-          type="submit" 
-          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+        
+        <button
+          type="submit"
+          className="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-200"
         >
-          Send
+          Send Message
         </button>
       </form>
     </section>

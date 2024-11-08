@@ -10,4 +10,36 @@
       background-position: center;
     }
   }
+
+  @layer utilities {
+    .first-grid {
+      background-image: url('./assets/personal.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @layer utilities {
+    .second-grid {
+      background-image: url('./assets/help.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @layer utilities {
+    .third-grid {
+      background-image: url('./assets/social.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @layer utilities {
+    .fourth-grid {
+      background-image: url('./assets/skill.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  }
   
