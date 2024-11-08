@@ -16,7 +16,7 @@ const About = () => (
       <h2 className="text-3xl font-bold mb-4">About Us</h2>
       
       <p className="text-lg text-gray-700 leading-relaxed">
-        Cheshire Homes is dedicated to supporting individuals with disabilities, helping them lead fulfilling lives with respect and independence. Our commitment is to empower, uplift, and integrate them into the community with dignity.
+        Cheshire Homes is dedicated to supporting individuals with disabilities, assisting them in living fulfilling lives with respect and independence. Our commitment is to empower, uplift, and integrate them into the community with dignity.
       </p>
     </div>
   </section>

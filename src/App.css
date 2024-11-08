@@ -43,3 +43,10 @@
     }
   }
   
+  @layer utilities {
+    .contact-section {
+      background-image: url('./assets/contactus.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  }

@@ -11,7 +11,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-16 px-4 bg-gradient-to-br from-blue-50 to-blue-100 text-center">
+    <section id="contact" className="contact-section py-16 px-4 text-center">
       <h2 className="text-3xl font-bold text-gray-800 mb-8">Contact Us</h2>
 
       <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg space-y-6">

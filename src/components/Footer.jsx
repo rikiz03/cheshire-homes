@@ -1,46 +1,46 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => (
-  <footer className="bg-blue-900 text-white py-10 px-4">
+  <footer className="bg-blue-900 text-white py-12 px-4">
     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-      {/* About Section */}
+      {/* The About Section */}
       <div>
         <h3 className="text-xl font-semibold mb-3">About Us</h3>
         <p className="text-gray-300">
-          Cheshire Homes is dedicated to supporting individuals with disabilities, helping them lead fulfilling lives with respect and independence.
+          Cheshire Homes is dedicated to supporting individuals with disabilities, helping them live fulfilling lives with respect and independence.
         </p>
       </div>
 
       {/* Links Section */}
-      <div>
+      <div className="md:ml-28">
         <h3 className="text-xl font-semibold mb-3">Quick Links</h3>
         <ul className="space-y-2">
-          <li><a href="#about" className="hover:text-gray-300">About Us</a></li>
-          <li><a href="#services" className="hover:text-gray-300">Our Services</a></li>
-          <li><a href="#contact" className="hover:text-gray-300">Contact Us</a></li>
-          <li><a href="#privacy" className="hover:text-gray-300">Privacy Policy</a></li>
+          <li><a href="#about" className="hover:text-gray-300 transition-colors">About Us</a></li>
+          <li><a href="#services" className="hover:text-gray-300 transition-colors">Our Services</a></li>
+          <li><a href="#contact" className="hover:text-gray-300 transition-colors">Contact Us</a></li>
+          <li><a href="#privacy" className="hover:text-gray-300 transition-colors">Privacy Policy</a></li>
         </ul>
       </div>
 
-      {/* Social Media Section */}
+      {/* Contacts Section */}
       <div>
-        <h3 className="text-xl font-semibold mb-3">Follow Us</h3>
-        <div className="flex justify-center md:justify-start space-x-4">
-          <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-white">
-            <FontAwesomeIcon icon={faFacebook} size="lg" />
-          </a>
-          <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-white">
-            <FontAwesomeIcon icon={faTwitter} size="lg" />
-          </a>
-          <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-white">
-            <FontAwesomeIcon icon={faInstagram} size="lg" />
-          </a>
-          <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-white">
-            <FontAwesomeIcon icon={faLinkedin} size="lg" />
-          </a>
-        </div>
+        <h3 className="text-xl font-semibold mb-3">Contact</h3>
+        <ul className="space-y-2 text-gray-300">
+          <li className="flex items-center justify-center md:justify-start">
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-gray-400" />
+            <span>26 Kenyetta, Enugu State, Nigeria</span>
+          </li>
+          <li className="flex items-center justify-center md:justify-start">
+            <FontAwesomeIcon icon={faPhone} className="mr-2 text-gray-400" />
+            <span>+234 703 577 8141</span>
+          </li>
+          <li className="flex items-center justify-center md:justify-start">
+            <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-gray-400" />
+            <a href="mailto:enquiries@cheshirehomes.com" className="hover:text-gray-300 transition-colors">enquiries@cheshirehomes.com</a>
+          </li>
+        </ul>
       </div>
     </div>
 
