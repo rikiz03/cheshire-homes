@@ -38,7 +38,7 @@ const Footer = () => (
           </li>
           <li className="flex items-center justify-center md:justify-start">
             <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-gray-400" />
-            <a href="mailto:enquiries@cheshirehomes.com" className="hover:text-gray-300 transition-colors">enquiries@cheshirehomes.com</a>
+            <a href="mailto:enquiries@cheshirehomes.com" className="hover:text-gray-300 transition-colors">enquiries@cheshirehomes.com.ng</a>
           </li>
         </ul>
       </div>
